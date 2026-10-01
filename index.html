@@ -5,9 +5,11 @@
 </head><body>
 <header><a class="brand" href="index.html">ShopEasy</a>
 <nav><a class="active" href="index.html">Products</a><a href="cart.html">Cart <span id="cartCount" class="badge">0</span></a></nav></header>
-<main class="container">
+<main class="container" data-page="products">
 <section class="hero"><div><p class="eyebrow">EVERYDAY SHOPPING</p><h1>Find what you need.</h1><p>Simple products, straightforward shopping.</p></div></section>
-<div class="toolbar"><input id="search" placeholder="Search products..." aria-label="Search products">
-<select id="category"><option value="all">All categories</option><option>Electronics</option><option>Home</option><option>Accessories</option></select></div>
-<section id="products" class="grid"></section>
-</main><script src="app.js"></script></body></html>
+<div class="toolbar"><input id="search" type="search" placeholder="Search products..." aria-label="Search products">
+<select id="category" aria-label="Category"><option value="all">All categories</option><option>Electronics</option><option>Home</option><option>Accessories</option></select></div>
+<section id="products" class="grid" aria-live="polite"></section>
+</main>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script></body></html>

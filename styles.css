@@ -16,4 +16,13 @@ header{height:68px;background:#fff;border-bottom:1px solid #e5e9ef;display:flex;
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-weight:700;font-size:14px}
 .notice{padding:13px;border-radius:9px;background:#fff7df;color:#6b5310;margin-bottom:15px}.success{padding:24px;border-radius:12px;background:#edf9f0;border:1px solid #b9e2c2}
 @media(max-width:750px){.grid{grid-template-columns:1fr 1fr}.cart-row{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}}
-@media(max-width:500px){.grid{grid-template-columns:1fr}.hero h1,.page-title h1{font-size:29px}}
+@media(max-width:500px){.grid{grid-template-columns:1fr}.hero h1,.page-title h1{font-size:29px}}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #9db6f5;outline-offset:2px}
+.btn{text-decoration:none;display:inline-block}.btn:disabled,.qty button:disabled{opacity:.45;cursor:not-allowed}
+.field .err{color:#b3261e;font-size:13px;min-height:16px}.field input[aria-invalid=true]{border-color:#b3261e}
+.promo{display:flex;gap:8px;margin-top:14px}.promo input{flex:1;min-width:0}.promo-msg{font-size:13px;margin-top:6px;color:#687386}
+.cart-item{display:flex;gap:14px;align-items:center}.cart-icon{font-size:28px;width:52px;height:52px;border-radius:10px;background:#edf1f7;display:flex;align-items:center;justify-content:center}
+.max-note{font-size:12px;color:#687386;margin-top:4px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#172033;color:#fff;padding:12px 18px;border-radius:10px;font-weight:600;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.show{opacity:1}
+.loading{color:#687386;padding:24px 0}
+@media(prefers-reduced-motion:reduce){.toast{transition:none}}
